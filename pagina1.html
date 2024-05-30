@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome del Luogo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            width: 100%;
+            background-color: #011121; /* Blu scuro */
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        main {
+            width: 80%;
+            max-width: 1200px;
+            margin: 2rem 0;
+        }
+        .section {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+        .section img {
+            flex: 1 1 300px;
+            max-width: 300px;
+            margin-right: 2rem;
+        }
+        .section .content {
+            flex: 2 1 300px;
+        }
+        footer {
+            width: 100%;
+            background-color: #011121; /* Blu scuro */
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+        }
+        @media (max-width: 768px) {
+            .section {
+                flex-direction: column;
+                align-items: center;
+            }
+            .section img {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nome del Luogo</h1>
+    </header>
+    <main>
+        <div class="section">
+            <img src="immagine1.jpg" alt="Descrizione Immagine 1">
+            <div class="content">
+                <h2>Titolo Sezione 1</h2>
+                <p>Descrizione del luogo e curiosità. Aggiungi qui i dettagli storici, aneddoti interessanti e altre informazioni rilevanti.</p>
+            </div>
+        </div>
+        <div class="section">
+            <img src="immagine2.jpg" alt="Descrizione Immagine 2">
+            <div class="content">
+                <h2>Titolo Sezione 2</h2>
+                <p>Ulteriori informazioni sul luogo. Puoi includere dettagli sull'architettura, eventi significativi e altro ancora.</p>
+            </div>
+        </div>
+        <div class="section">
+            <img src="immagine3.jpg" alt="Descrizione Immagine 3">
+            <div class="content">
+                <h2>Titolo Sezione 3</h2>
+                <p>Continua a raccontare la storia del luogo, con altre immagini e testi descrittivi.</p>
+            </div>
+        </div>
+        <a href="index.html">Torna alla mappa</a>
+    </main>
+    <footer>
+        © 2024 G4BSA - Tutti i diritti riservati
+    </footer>
+</body>
+</html>
