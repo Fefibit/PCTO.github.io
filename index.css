@@ -21,7 +21,7 @@ body {
 #game-map {
     width: 100%;
     height: auto;
-    display: block;
+    
     opacity: 0;
     animation: fadeIn 3s forwards; /* Applicazione dell'animazione */
 }
