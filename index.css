@@ -27,7 +27,7 @@ body {
 }
 
 .map-hotspot {
-    position: absolute;
+    position: absoulte;
     cursor: pointer;
     border: 2px solid transparent; /* Solo per scopi di debug, rimuovere in produzione */
 }
