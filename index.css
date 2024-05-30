@@ -10,31 +10,30 @@ body {
 }
 
 /* Stile per il contenitore dell'immagine di sfondo */
-#background-image {
-    position: absolute;
+#game-map {
     width: 100%;
-    height: 100%;
-    background-image: url('images/stemma.png'); /* Inserisci qui il percorso della tua immagine */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    height: auto;
+    display: block;
+    
     opacity: 0;
     animation: fadeIn 3s forwards; /* Applicazione dell'animazione */
 }
-
-/* Stile per le aree cliccabili */
-.clickable-area {
-    position: absolute;
-    width: 500px; /* Regola la dimensione dell'area cliccabile */
-    height: 80px; /* Regola la dimensione dell'area cliccabile */
-    cursor: pointer;
-    border: 2px red solid;
-     /* Solo per debugging, rimuovi in produzione */
+#map-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
 }
-
 /* Definizione dell'animazione di dissolvenza */
 @keyframes fadeIn {
     to {
         opacity: 1;
     }
 }
+
+.map-hotspot {
+    position: absolute;
+    cursor: pointer;
+    border: 2px solid transparent /* Solo per scopi di debug, rimuovere in produzione */
+}
+.hotspot-1 { top: 80%; left: 20%; width: 70%; height: 12%; }
