@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gioco dell'Oca Interattivo</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        #map-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        #game-map {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .map-hotspot {
+            position: absolute;
+            cursor: pointer;
+            border: 2px solid transparent; /* Solo per scopi di debug, rimuovere in produzione */
+        }
+
+        /* Aggiungi gli stili specifici per ogni hotspot */
+        .hotspot-1 { top: 10%; left: 10%; width: 10%; height: 10%; }
+        .hotspot-2 { top: 20%; left: 20%; width: 10%; height: 10%; }
+        .hotspot-3 { top: 30%; left: 30%; width: 10%; height: 10%; }
+    </style>
+</head>
+<body>
+    <div id="map-container">
+        <img id="game-map" src="tabellone_gioco_G4BSA.png" alt="Mappa del Gioco dell'Oca">
+        <div class="map-hotspot hotspot-1" data-link="pagina1.html"></div>
+        <div class="map-hotspot hotspot-2" data-link="pagina2.html"></div>
+        <div class="map-hotspot hotspot-3" data-link="pagina3.html"></div>
+        <!-- Aggiungi altre caselle cliccabili -->
+    </div>
+    <script>
+        document.querySelectorAll('.map-hotspot').forEach(hotspot => {
+            hotspot.addEventListener('click', function() {
+                window.location.href = this.dataset.link;
+            });
+        });
+    </script>
+</body>
+</html>

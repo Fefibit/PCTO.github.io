@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0b1246;
+}
+
+#map-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+#game-map {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 4px solid green;
+}
+
+.map-hotspot {
+    position: absolute;
+    cursor: pointer;
+    border: 2px solid transparent; /* Solo per scopi di debug, rimuovere in produzione */
+}
+
+/* Aggiungi gli stili specifici per ogni hotspot */
+.hotspot-1 { top: 5%; left: 0.5%; width: 10%; height: 10%; }
+.hotspot-2 { top: 23%; left: 53.5%; width: 14%; height: 11%; }
+.hotspot-3 { top: 20%; left: 84%; width: 15%; height: 14%; }
+.hotspot-4 { top: 19.5%; left: 5.5%; width: 11%; height: 10.5%; }
+.hotspot-5 { top: 5%; left: 23.5%; width: 10%; height: 12%; }
+.hotspot-6 { top: 2%; left: 67%; width: 12%; height: 12.5%; }
+.hotspot-7 { top: 40%; left: 59.5%; width: 9%; height: 10%; }
+.hotspot-8 { top: 39%; left: 73%; width: 10.5%; height: 11%; }
+.hotspot-9 { top: 49%; left: 48%; width: 9.5%; height: 12%; }
+.hotspot-10 { top: 55%; left: 67%; width: 10%; height: 10%; }
+.hotspot-11{ top: 49%; left: 85%; width: 13.5%; height: 15%; }
+.hotspot-12 { top: 67%; left: 2%; width: 11%; height: 11.5%; }
+.hotspot-13 { top: 83.5%; left: 0.5%; width: 10.5%; height: 13.5%; }
+.hotspot-14 { top: 84.5%; left: 21%; width: 13%; height: 10%; }
+.hotspot-15 { top: 73%; left: 52.5%; width: 13.5%; height: 11%; }
+.hotspot-16 { top: 85%; left: 65%; width: 12.5%; height: 11%; }
+.hotspot-17 { top: 82.5%; left: 85%; width: 12%; height: 15%; }
